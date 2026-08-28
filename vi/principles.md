@@ -6,12 +6,16 @@
 
 Áp dụng cho mọi ngôn ngữ và runtime. Gợi ý chỉ đúng với một ngôn ngữ lập trình thì không thuộc bộ này.
 
+Repo chỉ một người? Đọc [solo.md](solo.md). SLA và “chọn owner” ở nguyên tắc 4 không áp nguyên văn.
+
 ## 1. Code health tăng theo thời gian
 
-Reviewer **nên approve** khi PR chắc chắn làm hệ thống dễ hiểu / dễ sửa / ít rủi ro hơn hôm qua — **dù chưa hoàn hảo**.
+**Sàn:** change không được làm code health tệ hơn.  
+**Chuẩn approve:** reviewer **nên approve** khi PR chắc chắn cải thiện health — dễ hiểu hơn, dễ sửa hơn, hoặc ít rủi ro hơn hôm qua — **dù chưa hoàn hảo**.
 
+“Không làm xấu đi” không phải mục tiêu. Đó chỉ là đường không được vượt.  
 Không tồn tại PR hoàn hảo. Tìm cải thiện liên tục.  
-Không dùng nguyên tắc này để merge thứ làm codebase tệ hơn — trừ [emergency](emergencies.md).
+Không merge thứ làm codebase tệ hơn — trừ [emergency](emergencies.md).
 
 ## 2. Facts thắng preference
 
@@ -29,7 +33,11 @@ Tách:
 - schema / API contract khỏi consumer nếu merge độc lập được
 - config / flag khỏi implementation khi rollback cần độc lập
 
+Stack PR nền: xem [git.md](git.md#stacked-prs-and-unused-apis).
+
 ## 4. Tốc độ team hơn tốc độ cá nhân
+
+Áp dụng khi có hơn một người review. Solo: [solo.md](solo.md).
 
 Review chậm làm cả team chậm, khuyến khích “merge cho xong”, giết cleanup.
 
@@ -42,8 +50,10 @@ Review chậm làm cả team chậm, khuyến khích “merge cho xong”, giế
 Mỗi merge:
 
 - không làm đỏ bộ test bắt buộc
-- không để API/cờ chết không dùng
+- không để API/cờ chết không dùng **như trạng thái kết thúc của việc đang làm**
 - rollback được bằng revert hoặc flag
+
+PR nền được phép land API chưa có caller trong repo. Đó không phải API chết nếu description ghi PR tiếp theo và CI được chỉnh để cảnh báo unused không fail *PR đó*. Chi tiết: [git.md](git.md#stacked-prs-and-unused-apis).
 
 ## 6. Viết cho người sửa sau 6 tháng
 

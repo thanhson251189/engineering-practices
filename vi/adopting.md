@@ -2,16 +2,18 @@
 
 [English](../en/adopting.md)
 
-Repo practices chỉ có giá trị khi **gắn vào chỗ người ta mở PR**.
+Repo practices chỉ có giá trị khi **gắn vào chỗ người ta mở PR**. Chưa có template PR và check bắt buộc thì các trang này là markdown không ai đọc.
 
-Không phụ thuộc stack. Cùng bước với Go, TypeScript, Python, Java, hoặc repo lai.
+Không phụ thuộc stack.
+
+Một người? Làm template + CI + link trước. Bỏ “1 approve” đến khi có người thứ hai. Xem [solo.md](solo.md).
 
 ## Tối thiểu, một buổi
 
 1. Copy `templates/PULL_REQUEST_TEMPLATE.md` → repo sản phẩm `.github/PULL_REQUEST_TEMPLATE.md`.
-2. Bật rule: PR vào nhánh mặc định cần 1 approve.
+2. Nếu từ hai người: PR vào nhánh mặc định cần 1 approve.
 3. CI bắt buộc phải xanh (test + lint/format).
-4. Thêm link repo practices vào README sản phẩm và template PR.
+4. Link repo practices này vào README sản phẩm và template PR. Doc/skill của agent trỏ **repo này**, không trỏ bản Google đã archive.
 5. Bật formatter + linter, auto-format. Xóa debate indent khỏi review.
 6. Nếu đã rõ owner, copy `templates/CODEOWNERS.example`.
 

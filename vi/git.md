@@ -33,6 +33,18 @@ Cách tách (mọi ngôn ngữ):
 
 Không tách giả: 5 PR không merge độc lập được, build gãy giữa chuỗi.
 
+## Stacked PR và API chưa dùng
+
+Nguyên tắc 5 cấm để API public không caller như **trạng thái kết thúc** của việc. Không cấm PR nền.
+
+API mới (hoặc stub, type, trait, hàm export) được land khi chưa có caller trong repo nếu **đủ** các điều:
+
+1. Description ghi PR tiếp theo sẽ gọi nó (link hoặc tiêu đề).
+2. CI bắt buộc được chỉnh để cảnh báo unused / dead-code không fail **PR nền này**. Cách làm tùy ngôn ngữ (thu hẹp visibility, allow-list cho package đó, chưa export cho đến khi có consumer). Không nới check trên nhánh mặc định vĩnh viễn.
+3. PR consumer land trước khi API bị coi là hợp đồng ổn định.
+
+Nếu consumer bị bỏ: revert hoặc xóa API chết ở change kế. Không để nằm.
+
 ## File máy sinh
 
 Lockfile, codegen, snapshot: ghi rõ trong description. Reviewer không cần đọc từng dòng generated nếu tool tin cậy; vẫn phải hiểu *vì sao* generate lại.

@@ -6,12 +6,16 @@ Priority order: a lower rule must not break a higher one.
 
 Applies to every language and runtime. If a suggestion only works in one language, it does not belong here.
 
+One human on the repo? Read [solo.md](solo.md). Principles 4's SLA and "pick an owner" do not apply as written.
+
 ## 1. Code health improves over time
 
-Reviewers **should approve** when the PR clearly makes the system easier to understand, safer to change, or less risky than yesterday — **even if it is not perfect**.
+**Floor:** a change must not make overall code health worse.  
+**Approval bar:** reviewers **should approve** when the PR clearly improves health — easier to understand, safer to change, or less risky than yesterday — **even if it is not perfect**.
 
+"Does not worsen" is not enough to treat as the goal. It is only the line you must not cross.  
 Perfect PRs do not exist. Seek continuous improvement.  
-Do not use this rule to merge something that makes the codebase worse — except an [emergency](emergencies.md).
+Do not merge something that makes the codebase worse — except an [emergency](emergencies.md).
 
 ## 2. Facts beat preference
 
@@ -29,7 +33,11 @@ Split:
 - schema / API contract from consumers when they can merge independently
 - config / flags from implementation when rollback must be independent
 
+Stacked foundation PRs: see [git.md](git.md#stacked-prs-and-unused-apis).
+
 ## 4. Team speed beats individual speed
+
+Applies when more than one human reviews. Solo: [solo.md](solo.md).
 
 Slow review slows the whole team, encourages "just merge it", and kills cleanups.
 
@@ -42,8 +50,10 @@ Slow review slows the whole team, encourages "just merge it", and kills cleanups
 Every merge:
 
 - must not fail required tests
-- must not leave unused public APIs or dead flags
+- must not leave unused public APIs or dead flags **as the finished state of the work**
 - must be reversible with revert or a flag
+
+A foundation PR may land an API with no in-repo caller yet. That is not a dead API if the description names the follow-up PR and required CI is set so unused-item warnings do not fail *that* PR. Details: [git.md](git.md#stacked-prs-and-unused-apis).
 
 ## 6. Write for the person who edits this in six months
 

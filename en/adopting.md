@@ -2,16 +2,18 @@
 
 [Tiếng Việt](../vi/adopting.md)
 
-This practices repo only matters when it is **wired into the place people open PRs**.
+This practices repo only matters when it is **wired into the place people open PRs**. Until the product repo has a PR template and a required check, these pages are unread markdown.
 
-Stack-agnostic. Same steps for Go, TypeScript, Python, Java, or mixed repos.
+Stack-agnostic. Same steps for any language.
+
+One human? Do the template + CI + link first. Skip "1 approval" until a second person exists. See [solo.md](solo.md).
 
 ## Minimum, one session
 
 1. Copy `templates/PULL_REQUEST_TEMPLATE.md` → product repo `.github/PULL_REQUEST_TEMPLATE.md`.
-2. Require 1 approval on PRs to the default branch.
+2. If two or more humans: require 1 approval on PRs to the default branch.
 3. Required CI must be green (tests + lint/format).
-4. Link this practices repo from the product README and the PR template.
+4. Link this practices repo from the product README and the PR template. Point agent/skill docs at **this** repo, not at Google's archived text.
 5. Turn on a formatter and linter with auto-format. Remove indent debates from review.
 6. If ownership is clear, copy `templates/CODEOWNERS.example`.
 
