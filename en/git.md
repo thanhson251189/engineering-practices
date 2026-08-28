@@ -33,6 +33,14 @@ Ways to split (any language):
 
 Do not fake-split: five PRs that cannot merge independently, with a red build in the middle of the chain.
 
+## Do not break the build between stacked PRs
+
+Each PR in a stack must be mergeable to the default branch on its own: required tests green, the tree compiles, no half-applied schema.
+
+The next PR may depend on this one. This one must not depend on the next one to be buildable.
+
+If CI is red until “the rest of the stack lands”, that is one PR wearing a stack costume. Merge it as one or cut a thinner foundation.
+
 ## Stacked PRs and unused APIs
 
 Principle 5 forbids leaving unused public APIs as the **finished** state of the work. It does not forbid a foundation PR.

@@ -19,8 +19,9 @@ Every change must also be **small enough to review in one sitting**.
 | Everyone | [Principles](en/principles.md) |
 | Solo / one human | [Solo](en/solo.md) |
 | PR author | [Author guide](en/review/author.md) |
+| Author receiving comments | [Handling comments](en/review/handling-comments.md) |
 | Reviewer | [Reviewer guide](en/review/reviewer.md) |
-| How to write comments | [Comments](en/review/comments.md) |
+| How reviewers write comments | [Comments](en/review/comments.md) |
 | Branches, size, stacking | [Git](en/git.md) |
 | Tests | [Testing](en/testing.md) |
 | When to write docs | [Docs](en/docs.md) |
@@ -61,8 +62,9 @@ Mọi thay đổi còn phải **đủ nhỏ để review trong một lần ngồ
 | Mọi người | [Nguyên tắc](vi/principles.md) |
 | Solo / một người | [Solo](vi/solo.md) |
 | Người gửi PR | [Hướng dẫn author](vi/review/author.md) |
+| Author khi nhận comment | [Xử lý comment](vi/review/handling-comments.md) |
 | Reviewer | [Hướng dẫn reviewer](vi/review/reviewer.md) |
-| Cách viết comment | [Comment](vi/review/comments.md) |
+| Cách reviewer viết comment | [Comment](vi/review/comments.md) |
 | Nhánh, size, stack PR | [Git](vi/git.md) |
 | Test | [Test](vi/testing.md) |
 | Khi nào viết docs | [Docs](vi/docs.md) |

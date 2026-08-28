@@ -33,6 +33,14 @@ Cách tách (mọi ngôn ngữ):
 
 Không tách giả: 5 PR không merge độc lập được, build gãy giữa chuỗi.
 
+## Không phá build giữa các PR chồng
+
+Mỗi PR trong stack phải merge được vào nhánh mặc định một mình: test bắt buộc xanh, tree compile, không schema dở.
+
+PR sau được phụ thuộc PR này. PR này không được phụ thuộc PR sau mới build được.
+
+CI đỏ đến khi “phần còn lại của stack land” thì đó là một PR giả dạng stack. Merge một cục hoặc cắt nền mỏng hơn.
+
 ## Stacked PR và API chưa dùng
 
 Nguyên tắc 5 cấm để API public không caller như **trạng thái kết thúc** của việc. Không cấm PR nền.
