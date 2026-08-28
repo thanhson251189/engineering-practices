@@ -1,0 +1,10 @@
+# Copy to CODEOWNERS at the product repo root or .github/CODEOWNERS
+# https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
+#
+# Default owner for the whole tree. Language does not matter.
+# Owner mặc định cho cả cây thư mục. Không phụ thuộc ngôn ngữ lập trình.
+
+*       @your-handle
+
+# /src/billing/  @billing-owner
+# /infra/        @infra-owner
