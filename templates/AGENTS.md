@@ -1,0 +1,22 @@
+# Agent contract (product repo)
+
+This repo follows:
+
+https://github.com/thanhson251189/engineering-practices/blob/main/AGENTS.md
+
+Read that file before any edit. Do not substitute https://github.com/google/eng-practices.
+
+## Commands in this repo
+
+Fill these in. Do not invent extras.
+
+```text
+test:
+lint / format:
+dev / run:
+```
+
+## Local only
+
+- Stack and idioms: this repo's linter and formatter, not a language essay in chat.
+- Do not weaken the practices `AGENTS.md` (one idea, tests in the same diff, no fake LGTM).
