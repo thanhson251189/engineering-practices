@@ -4,7 +4,7 @@
 
 “Cần 1 approve”, “chọn người own vùng code”, “phản hồi trong một ngày làm việc” giả định có người thứ hai. Không chạy nguyên văn trên repo một người, vẫn push thẳng nhánh mặc định.
 
-Phần còn lại của guide vẫn áp: change nhỏ, sàn vs chuẩn approve, test, docs, không tách giả.
+Phần còn lại của guide vẫn áp: change nhỏ, sàn vs chuẩn approve, test, docs, không tách giả. Agent theo [AGENTS.md](../AGENTS.md) và [bản Việt](AGENTS.md).
 
 ## Thay reviewer thứ hai bằng gì
 

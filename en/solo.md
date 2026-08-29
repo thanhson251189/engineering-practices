@@ -4,7 +4,7 @@
 
 "Require 1 approval", "pick the owner of that area", and "respond within one business day" assume a second person. They do not run as written on a repo with one human who pushes to the default branch.
 
-The rest of the guide still applies: small changes, floor vs approval bar, tests, docs, no fake splits.
+The rest of the guide still applies: small changes, floor vs approval bar, tests, docs, no fake splits. Agents follow root [AGENTS.md](../AGENTS.md).
 
 ## What replaces a second reviewer
 

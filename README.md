@@ -17,6 +17,7 @@ Every change must also be **small enough to review in one sitting**.
 | Role | Page |
 |------|------|
 | Everyone | [Principles](en/principles.md) |
+| Coding agent | [AGENTS.md](AGENTS.md) |
 | Solo / one human | [Solo](en/solo.md) |
 | PR author | [Author guide](en/review/author.md) |
 | Author receiving comments | [Handling comments](en/review/handling-comments.md) |
@@ -60,6 +61,7 @@ Mọi thay đổi còn phải **đủ nhỏ để review trong một lần ngồ
 | Vai trò | Trang |
 |---------|-------|
 | Mọi người | [Nguyên tắc](vi/principles.md) |
+| Coding agent | [AGENTS.md](AGENTS.md) · [VI](vi/AGENTS.md) |
 | Solo / một người | [Solo](vi/solo.md) |
 | Người gửi PR | [Hướng dẫn author](vi/review/author.md) |
 | Author khi nhận comment | [Xử lý comment](vi/review/handling-comments.md) |
@@ -95,9 +97,10 @@ Rule xung đột deadline: **principles thắng**. Vẫn bất đồng: nói 15 
 ## Layout
 
 ```
+AGENTS.md    contract for coding agents (English source of truth)
 en/          English
-vi/          Tiếng Việt
-templates/   PR template (bilingual) + CODEOWNERS example
+vi/          Tiếng Việt (includes vi/AGENTS.md)
+templates/   PR template + product AGENTS.md + CODEOWNERS example
 ```
 
 `en/` and `vi/` are the same rules. Change both in one PR. If they drift, **English is the source of truth** until the Vietnamese page is updated.

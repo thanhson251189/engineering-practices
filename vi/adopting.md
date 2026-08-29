@@ -11,11 +11,12 @@ Một người? Làm template + CI + link trước. Bỏ “1 approve” đến 
 ## Tối thiểu, một buổi
 
 1. Copy `templates/PULL_REQUEST_TEMPLATE.md` → repo sản phẩm `.github/PULL_REQUEST_TEMPLATE.md`.
-2. Nếu từ hai người: PR vào nhánh mặc định cần 1 approve.
-3. CI bắt buộc phải xanh (test + lint/format).
-4. Link repo practices này vào README sản phẩm và template PR. Doc/skill của agent trỏ **repo này**, không trỏ bản Google đã archive.
-5. Bật formatter + linter, auto-format. Xóa debate indent khỏi review.
-6. Nếu đã rõ owner, copy `templates/CODEOWNERS.example`.
+2. Copy `templates/AGENTS.md` → repo sản phẩm `AGENTS.md`. Điền lệnh test / lint / run. Skill Hermes, Cursor, Codex trỏ file đó và repo practices này — không trỏ bản Google đã archive.
+3. Nếu từ hai người: PR vào nhánh mặc định cần 1 approve.
+4. CI bắt buộc phải xanh (test + lint/format).
+5. Link repo practices này vào README sản phẩm và template PR.
+6. Bật formatter + linter, auto-format. Xóa debate indent khỏi review.
+7. Nếu đã rõ owner, copy `templates/CODEOWNERS.example`.
 
 ## Việc không làm tuần đầu
 

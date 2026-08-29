@@ -11,11 +11,12 @@ One human? Do the template + CI + link first. Skip "1 approval" until a second p
 ## Minimum, one session
 
 1. Copy `templates/PULL_REQUEST_TEMPLATE.md` → product repo `.github/PULL_REQUEST_TEMPLATE.md`.
-2. If two or more humans: require 1 approval on PRs to the default branch.
-3. Required CI must be green (tests + lint/format).
-4. Link this practices repo from the product README and the PR template. Point agent/skill docs at **this** repo, not at Google's archived text.
-5. Turn on a formatter and linter with auto-format. Remove indent debates from review.
-6. If ownership is clear, copy `templates/CODEOWNERS.example`.
+2. Copy `templates/AGENTS.md` → product repo `AGENTS.md`. Fill in test / lint / run commands. Point Hermes, Cursor, Codex, and similar skills at that file and at this practices repo — not at Google's archived text.
+3. If two or more humans: require 1 approval on PRs to the default branch.
+4. Required CI must be green (tests + lint/format).
+5. Link this practices repo from the product README and the PR template.
+6. Turn on a formatter and linter with auto-format. Remove indent debates from review.
+7. If ownership is clear, copy `templates/CODEOWNERS.example`.
 
 ## Do not do in week one
 
