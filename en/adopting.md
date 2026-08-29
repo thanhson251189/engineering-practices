@@ -11,7 +11,7 @@ One human? Do the template + CI + link first. Skip "1 approval" until a second p
 ## Minimum, one session
 
 1. Copy `templates/PULL_REQUEST_TEMPLATE.md` → product repo `.github/PULL_REQUEST_TEMPLATE.md`.
-2. Copy `templates/AGENTS.md` → product repo `AGENTS.md`. Fill in test / lint / run commands. Point Hermes, Cursor, Codex, and similar skills at that file and at this practices repo — not at Google's archived text.
+2. Copy `templates/AGENTS.md` → product repo `AGENTS.md` and `templates/CLAUDE.md` → product repo `CLAUDE.md`. Fill in test / lint / run commands. Point Hermes, Cursor, Codex, and similar skills at those files and at this practices repo — not at Google's archived text. Claude Code reads `CLAUDE.md`, not `AGENTS.md`.
 3. If two or more humans: require 1 approval on PRs to the default branch.
 4. Required CI must be green (tests + lint/format).
 5. Link this practices repo from the product README and the PR template.

@@ -98,9 +98,10 @@ Rule xung đột deadline: **principles thắng**. Vẫn bất đồng: nói 15 
 
 ```
 AGENTS.md    contract for coding agents (English source of truth)
+CLAUDE.md    one-line import of AGENTS.md (Claude Code)
 en/          English
 vi/          Tiếng Việt (includes vi/AGENTS.md)
-templates/   PR template + product AGENTS.md + CODEOWNERS example
+templates/   PR template + product AGENTS.md + CLAUDE.md + CODEOWNERS example
 ```
 
 `en/` and `vi/` are the same rules. Change both in one PR. If they drift, **English is the source of truth** until the Vietnamese page is updated.
