@@ -26,6 +26,16 @@ Không bịa style guide theo ngôn ngữ. Không lấy `google/eng-practices` (
 - Không để API public chết như trạng thái kết thúc. PR nền phải ghi PR consumer; không nới CI vĩnh viễn.
 - Mỗi PR trong stack tự build và qua check bắt buộc.
 - Sửa code, đừng thắng thread review.
+- Khớp style file đang sửa. Không đưa idiom ngôn ngữ mới vì bạn thích.
+- Không thêm dependency nếu người không xin.
+
+## Không
+
+- Không tuyên bố test/lint/format xanh nếu chưa chạy đúng lệnh của repo sản phẩm trong phiên này.
+- Không bịa API, đường dẫn file, config, hoặc output lệnh. Mở file trước.
+- Không sửa assertion cho test xanh. App sai thì sửa app. Test sai thì nói trên PR.
+- Không commit secret, `.env`, private key, credential.
+- Không push đổi hành vi thẳng vào nhánh mặc định.
 
 ## Cấm gọi là xong
 

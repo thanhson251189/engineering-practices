@@ -26,6 +26,16 @@ Do not invent a language style guide. Do not load Google's archived `eng-practic
 - Do not leave unused public APIs as the finished state. Foundation PRs must name the consumer PR and must not rely on a permanently weakened CI check.
 - Each stacked PR must build and pass required checks on its own.
 - Prefer changing code over winning a review thread.
+- Match style already in the files you edit. Do not introduce a new language idiom because you prefer it.
+- Do not add a dependency unless the human asked for it.
+
+## Must not
+
+- Do not claim tests, lint, or format passed unless you ran that product-repo command in this session.
+- Do not invent APIs, file paths, config keys, or command output. Open the file first.
+- Do not change a test assertion so the suite goes green. If the app is wrong, fix the app. If the test is wrong, say why on the PR.
+- Do not commit secrets, `.env`, private keys, or credentials.
+- Do not push behavior changes straight to the default branch.
 
 ## Must not claim done
 

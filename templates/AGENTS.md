@@ -20,3 +20,4 @@ dev / run:
 
 - Stack and idioms: this repo's linter and formatter, not a language essay in chat.
 - Do not weaken the practices `AGENTS.md` (one idea, tests in the same diff, no fake LGTM).
+- Copy `templates/CLAUDE.md` → product repo `CLAUDE.md` so Claude Code loads the same contract.
